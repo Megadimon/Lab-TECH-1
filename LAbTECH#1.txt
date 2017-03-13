@@ -6,8 +6,8 @@ using namespace std;
 
 int main(void)
 {
-	char file1[50];
-	char file2[50];
+	char file1[250];
+	char file2[250];
 	unsigned int size1;
 	unsigned int size2;
 	char **txt1;
@@ -29,7 +29,7 @@ int main(void)
 
 		for (unsigned int i = 0; i < size1; ++i)
 		{
-			fin1.getline(file1, 49, '\n');
+			fin1.getline(file1, 249, '\n');
 			txt1[i] = new char[strlen(file1)];
 			for (unsigned int j = 0; j < strlen(file1); ++j)
 			{
@@ -39,7 +39,7 @@ int main(void)
 
 		for (unsigned int i = 0; i < size2; ++i)
 		{
-			fin2.getline(file2, 49, '\n');
+			fin2.getline(file2, 249, '\n');
 			txt2[i] = new char[strlen(file2)];
 			for (unsigned int j = 0; j < strlen(file2); ++j)
 			{
